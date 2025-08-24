@@ -5,6 +5,8 @@ This repository contains a full end-to-end project that combines Time Series For
 ## Time Series Forecasting
 * Objective: Build a forecasting model to predict baseline values without the marketing intervention.
 
+ ![App Screenshot](./ResultArima.png)
+
 * Techniques:
 
   * Data visualization & decomposition
