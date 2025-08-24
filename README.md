@@ -1,24 +1,48 @@
 # Time Series Analysis & A/B Testing
 
-This repository contains a full end-to-end project that combines Time Series Forecasting and A/B Testing methodologies using real business data. The goal is to evaluate the impact of a marketing action over time while considering natural fluctuations in the data.
+This repository presents a complete end-to-end data science project that combines Time Series Forecasting and A/B Testing methodologies to evaluate the real impact of a marketing intervention over time.
 
-## Time Series Forecasting
-* Objective: Build a forecasting model to predict baseline values without the marketing intervention.
+By integrating statistical modeling, machine learning, and experimentation techniques, this project aims to separate the true effect of a marketing action from natural variations in the data.
+
+## Project Overview
+
+**Goal:** Estimate the causal impact of a marketing campaign by comparing actual performance with a synthetic baseline generated from forecasting models.
+
+Approach:
+
+* Build time series models to predict expected values without the intervention.
+* Compare actual results to the forecast to measure uplift.
+* Validate results statistically using A/B testing methodologies.
+
+### Time Series Forecasting
+
+**Objective:** Create a reliable model to forecast baseline values in the absence of the marketing action.
+
+Techniques used:
+
+* Data visualization & decomposition
+* Stationarity testing (Augmented Dickey-Fuller test)
+* Differencing to remove trends/seasonality
+* ARIMA and SARIMA modeling
+* Hyperparameter tuning (grid search)
+* Prophet modeling with external regressors (e.g., weather, marketing spend)
+
+Example Result – ARIMA Forecast:
 
  ![App Screenshot](./ResultArima.png)
 
-* Techniques:
 
-  * Data visualization & decomposition
-  * Stationarity testing (ADF Test)
-  * Differencing techniques to make the series stationary
-  * ARIMA and SARIMA modeling
-  * Hyperparameter tuning
-  * Prophet modeling (with external regressors such as weather and marketing)
- 
-## Key Learnings
+### A/B Testing & Evaluation
 
-* Importance of stationarity in time series modeling
-* How to perform differencing and seasonal decomposition
-* How to evaluate an intervention by comparing it with a synthetic baseline
-* How to combine machine learning and statistical testing in a robust pipeline
+* Statistical comparison between observed results and predicted baseline
+* Confidence interval estimation for uplift
+* Consideration of seasonality, holidays, and external factors to avoid biased conclusions
+
+
+### Key Learnings & Insights
+
+* The importance of stationarity in time series modeling
+* How to perform seasonal decomposition and differencing
+* How to simulate a control group using synthetic data
+* How to combine forecasting models with hypothesis testing to assess business impact
+* Practical workflow for integrating ML & statistical methods in a real-world pipeline
