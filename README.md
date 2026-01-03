@@ -25,7 +25,7 @@ Techniques used:
  * Calculation of Price Elasticity and Sales Ratios to measure promotional efficiency.
  * Dynamic thresholding to identify significant deviations (Lift) caused by price reductions.
 
- ![App Screenshot](./ResultArima.png)
+ ![App Screenshot](./Images/baseline.png)
 
 ### Time Series Forecasting
 
