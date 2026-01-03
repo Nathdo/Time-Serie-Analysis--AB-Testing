@@ -14,6 +14,19 @@ Approach:
 * Compare actual results to the forecast to measure uplift.
 * Validate results statistically using A/B testing methodologies.
 
+
+### Retail Promo Impact & Baseline Modeling
+
+**Objective:** Quantify the true incremental lift of discount strategies by isolating organic sales trends from promotional spikes.
+
+Techniques used:
+ * Hodrick-Prescott (HP) Filter for trend-cycle decomposition to extract a smooth sales baseline.
+ * Differentiation between "Business as usual" sales and promotion-driven volume.
+ * Calculation of Price Elasticity and Sales Ratios to measure promotional efficiency.
+ * Dynamic thresholding to identify significant deviations (Lift) caused by price reductions.
+
+ ![App Screenshot](./ResultArima.png)
+
 ### Time Series Forecasting
 
 **Objective:** Create a reliable model to forecast baseline values in the absence of the marketing action.
