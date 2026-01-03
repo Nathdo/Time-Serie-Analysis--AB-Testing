@@ -26,6 +26,7 @@ Techniques used:
  * Dynamic thresholding to identify significant deviations (Lift) caused by price reductions.
 
  ![App Screenshot](./Images/baseline.png)
+  ![App Screenshot](./Images/control.png)
 
 ### Time Series Forecasting
 
